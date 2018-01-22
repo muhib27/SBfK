@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import app.sbk.com.sbk.R;
 import app.sbk.com.sbk.fragment.HomePageFragment;
+import app.sbk.com.sbk.fragment.UserReportFragment;
 import app.sbk.com.sbk.utils.AppSharedPreference;
 
 public class MainActivity extends AppCompatActivity
@@ -152,6 +153,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            gotoUserReportFragment();
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -166,5 +168,14 @@ public class MainActivity extends AppCompatActivity
         //drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void gotoUserReportFragment() {
+        navigationView.setCheckedItem(R.id.nav_camera);
+        UserReportFragment userReportFragment = new UserReportFragment();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.main_acitivity_container, userReportFragment);
+        transaction.commit();
     }
 }

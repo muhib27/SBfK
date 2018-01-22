@@ -1,15 +1,18 @@
 package app.sbk.com.sbk.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import app.sbk.com.sbk.R;
 import app.sbk.com.sbk.utils.AppSharedPreference;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
     ImageView imageView;
     @Override
     protected void onStart() {
@@ -37,6 +40,9 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         imageView = (ImageView) findViewById(R.id.logo);
 
