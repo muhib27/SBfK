@@ -32,5 +32,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.okhttp:okhttp:2.7.2'
     compile 'com.android.support:design:27.+'
+    compile 'com.android.support:support-v4:27.+'
     testCompile 'junit:junit:4.12'
 }
