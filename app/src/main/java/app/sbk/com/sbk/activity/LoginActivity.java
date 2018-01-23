@@ -58,9 +58,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 attemptLogin();
             }
         });
-        notRegistered = (TextView)findViewById(R.id.not_registered);
-        String text = "<font color=#cc0029>Not Registered Yet?</font> <font color=#239cdc> Register Now</font>";
-        notRegistered.setText(Html.fromHtml(text));
+//        notRegistered = (TextView)findViewById(R.id.not_registered);
+//        String text = "<font color=#cc0029>Not Registered Yet?</font> <font color=#239cdc> Register Now</font>";
+//        notRegistered.setText(Html.fromHtml(text));
 
     }
 

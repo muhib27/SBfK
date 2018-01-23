@@ -10,11 +10,14 @@
     <dimen name="recyclerViewQaList_divider">1dp</dimen>
     <dimen name="recyclerViewQaList_divider_search">2dp</dimen>
 
+    <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_10dp">10dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_40dp">40dp</dimen>
     <dimen name="margin_50dp">50dp</dimen>
 
     <!--text size-->
+    <dimen name="text_size_20sp">20sp</dimen>
     <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="homepage_circle_height">80dp</dimen>
 </resources>

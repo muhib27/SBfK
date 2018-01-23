@@ -5,11 +5,11 @@
         <item
             android:id="@+id/homepage"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Homepage" />
         <item
             android:id="@+id/monthlyReport"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Monthly Report" />
         <item
             android:id="@+id/admin"
             android:icon="@drawable/ic_menu_slideshow"
