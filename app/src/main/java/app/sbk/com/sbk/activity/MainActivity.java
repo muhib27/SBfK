@@ -2,6 +2,7 @@ package app.sbk.com.sbk.activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity
         gotoHomepageFragment();
     }
     private void gotoHomepageFragment() {
-        navigationView.setCheckedItem(R.id.nav_camera);
+        navigationView.setCheckedItem(R.id.homepage);
         HomePageFragment homePageFragment = new HomePageFragment();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
@@ -150,20 +151,21 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.homepage) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.monthlyReport) {
             gotoUserReportFragment();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.admin) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.logout) {
+            cleanUserCredential();
         }
+//        else if (id == R.id.nav_share) {
+//
+//        } else if (id == R.id.nav_send) {
+//
+//        }
 
         //drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -171,11 +173,17 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void gotoUserReportFragment() {
-        navigationView.setCheckedItem(R.id.nav_camera);
+        navigationView.setCheckedItem(R.id.homepage);
         UserReportFragment userReportFragment = new UserReportFragment();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_acitivity_container, userReportFragment);
         transaction.commit();
+    }
+    public void cleanUserCredential() {
+        AppSharedPreference.setUsingFirstTime(true);
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
