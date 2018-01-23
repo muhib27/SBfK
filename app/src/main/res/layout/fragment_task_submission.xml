@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10dp"
+    android:gravity="center"
+    tools:context="app.sbk.com.sbk.fragment.TaskSubmissionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="@dimen/margin_10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="@dimen/text_size_17sp"
+            android:text="@string/regular_office"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:textSize="@dimen/text_size_17sp"
+            android:text="@string/meeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/margin_10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="@dimen/text_size_17sp"
+            android:text="@string/field_work"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:textSize="@dimen/text_size_17sp"
+            android:text="@string/meeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/margin_10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/others"/>
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/submit"
+            android:layout_height="@dimen/margin_40dp" />
+    </LinearLayout>
+
+</LinearLayout>

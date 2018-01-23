@@ -96,17 +96,17 @@
                 android:layout_height="wrap_content"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold"/>
-            <TextView
-                android:layout_gravity="center"
-                android:textColor="@color/forgot_password_color"
-                android:id="@+id/not_registered"
-                android:visibility="visible"
-                android:layout_marginTop="@dimen/margin_20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/margin_20dp"
-                android:text=""
-                android:textSize="14sp" />
+            <!--<TextView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="@color/forgot_password_color"-->
+                <!--android:id="@+id/not_registered"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_marginTop="@dimen/margin_20dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/margin_20dp"-->
+                <!--android:text=""-->
+                <!--android:textSize="14sp" />-->
 
         </LinearLayout>
     </ScrollView>

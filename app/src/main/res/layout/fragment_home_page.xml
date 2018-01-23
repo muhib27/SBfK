@@ -1,13 +1,72 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="app.sbk.com.sbk.fragment.HomePageFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!--<ImageView-->
+    <!--android:layout_marginTop="@dimen/margin_20dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_width="@dimen/homepage_circle_height"-->
+    <!--android:layout_height="@dimen/homepage_circle_height"-->
+    <!--android:background="@drawable/img"/>-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="40dp">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/bcb"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/pageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/welcome_msg"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/reminder_msg"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/todayTask"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="@string/task"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

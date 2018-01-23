@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+            gotoHomepageFragment();
         } else if (id == R.id.nav_gallery) {
             gotoUserReportFragment();
 
