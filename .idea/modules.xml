@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:\Development\SBfK\SBK.iml" filepath="D:\Development\SBfK\SBK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SBK.iml" filepath="$PROJECT_DIR$/SBK.iml" />
+      <module fileurl="file://D:/Development/SBfK/SBK.iml" filepath="D:/Development/SBfK/SBK.iml" />
       <module fileurl="file://$PROJECT_DIR$/SBfK.iml" filepath="$PROJECT_DIR$/SBfK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

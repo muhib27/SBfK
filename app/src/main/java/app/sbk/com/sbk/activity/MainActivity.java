@@ -153,12 +153,10 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.homepage) {
             // Handle the camera action
-        } else if (id == R.id.monthlyReport) {
             gotoHomepageFragment();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.monthlyReport) {
             gotoUserReportFragment();
-
-        } else if (id == R.id.admin) {
+        }  else if (id == R.id.admin) {
 
         } else if (id == R.id.logout) {
             cleanUserCredential();
